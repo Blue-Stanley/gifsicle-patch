@@ -1,0 +1,23 @@
+--- gifsicle-1.71/src/gifview.c	2013-11-16 20:38:14.860337110 +0700
++++ gifsicle-1.71/src/gifview-patch.c	2013-11-16 20:37:40.937002752 +0700
+@@ -1296,12 +1296,18 @@
+       break;
+ 
+      case WINDOW_OPT:
+-      cur_use_window = clp->val.u;
++      if (clp->val.i<0)
++        cur_use_window = clp->val.i;
++      else
++        cur_use_window = clp->val.u;
+       cur_use_window_new = 0;
+       break;
+ 
+      case NEW_WINDOW_OPT:
+-      cur_use_window = clp->val.u;
++      if (clp->val.i<0)
++        cur_use_window = clp->val.i;
++      else
++        cur_use_window = clp->val.u;
+       cur_use_window_new = 1;
+       break;
+ 
