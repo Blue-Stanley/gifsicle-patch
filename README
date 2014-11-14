@@ -8,3 +8,5 @@ This patch is for following error when running gifview -w root or gifview --new-
   Resource id in failed request:  0xffffffff
   Serial number of failed request:  7
   Current serial number in output stream:  8
+
+Update: this bug have been fix on org repos https://github.com/kohler/gifsicle
