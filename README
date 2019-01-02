@@ -1,5 +1,8 @@
 gifsicle-patch
 ==============
+Updated: The patch is already applied at upstream repo, you may want to check it there instead:
+https://github.com/kohler/gifsicle/commit/cab87f707b0545a2c12d7414576fe475211f1b83
+
 This repo contain patch and PKGBUILD for making gifsicle packge on arch linux
 This patch is for following error when running gifview -w root or gifview --new-window root:
 
@@ -8,5 +11,3 @@ This patch is for following error when running gifview -w root or gifview --new-
   Resource id in failed request:  0xffffffff
   Serial number of failed request:  7
   Current serial number in output stream:  8
-
-Update: this bug have been fix on org repos https://github.com/kohler/gifsicle
